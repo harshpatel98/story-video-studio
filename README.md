@@ -73,12 +73,12 @@ The end card, caption overrides, thumbnail badge and voice settings come from **
 
 **Personal (all projects):**
 ```bash
-git clone https://github.com/<your-username>/story-video-studio.git ~/.claude/skills/story-video-studio
+git clone https://github.com/harshpatel98/story-video-studio.git ~/.claude/skills/story-video-studio
 ```
 
 **One project only:**
 ```bash
-git clone https://github.com/<your-username>/story-video-studio.git .claude/skills/story-video-studio
+git clone https://github.com/harshpatel98/story-video-studio.git .claude/skills/story-video-studio
 ```
 
 Restart Claude Code or start a new session. The skill loads automatically when you type `/discover-topics`, `/create-video` or `/batch-mode`, or when you ask to plan or script a short story video.
