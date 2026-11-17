@@ -29,3 +29,11 @@ Rules the skill enforces: tagline ≥ 48 px on 9:16; lockup centred vertically; 
 - **Voice name / provider:** `<your voice or AI voice>`
 - **Pace:** `<words per second, default 3.1>`
 - **Tone:** `<e.g. calm documentary, dry irony>`
+
+## Defaults (optional, used by /video quick mode)
+- **Ratio & length:** `<e.g. 9:16, ~37 s>`
+- **Script style:** `<S1 / S2 / S3, or "pick for me">`
+- **Look:** `<V1–V5, or "pick for me">`
+- **Voice:** `<my own recording / AI voice / no voice>`
+- **Thumbnail style:** `<High-CTR / Clean / Match video / Custom>`
+- **Platforms:** `<e.g. YouTube Shorts, TikTok, Reels>`

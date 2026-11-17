@@ -2,7 +2,9 @@
 
 > **This is a worked example built around a fictional company.** "Kettleo", its numbers and its events are invented to show the workflow without publishing unverified claims about a real business. In a real run, every number below would sit on the ⚠ Verify list until you confirm it.
 
-This transcript is condensed. Each `USER:` / `CLAUDE:` pair is one turn. Notice the pattern on every turn: at most two questions, a recommended default, gates that wait, and the `[Production State]` block at the end.
+This run uses `/video custom` (full control) so every question is visible. **Quick mode (`/video`) skips Turns 3, 4, 6's look question, 8 and 10's questions**: it asks only "What's the story?" and the voice question, and picks the rest itself.
+
+This transcript is condensed. Each `USER:` / `CLAUDE:` pair is one turn. Notice the pattern on every turn: at most two questions, a recommended default, gates that wait, and the 📍 status line at the end.
 
 ---
 
@@ -16,15 +18,7 @@ Two quick ones:
 2. **Main platform?** (1) YouTube Shorts ★, (2) TikTok, (3) Instagram Reels, (4) all three
 
 ```
-[Production State]
-Mode: —
-Topic: —
-Format/Ratio: —
-Length: —
-Script Style: —
-Visual Preset: —
-Audio Mode: —
-Status: Discovery — waiting for niche + platform
+📍 Custom · — · — · — · — · — · Next: Discovery — waiting for niche + platform
 ```
 
 ---
@@ -48,15 +42,7 @@ Kettleo scores highest: a clear number, a built-in irony, a strong visual set-pi
 **Lock one** (number), **expand** one, or **generate more**?
 
 ```
-[Production State]
-Mode: —
-Topic: —
-Format/Ratio: —
-Length: —
-Script Style: —
-Visual Preset: —
-Audio Mode: —
-Status: Discovery — 5 ideas shown, waiting for a pick
+📍 Custom · — · — · — · — · — · Next: Discovery — 5 ideas shown, waiting for a pick
 ```
 
 ---
@@ -71,15 +57,7 @@ Topic locked: **Kettleo**.
 2. **Length & ratio?** (1) 9:16, ~37 s total (VO ~32 s) ★, (2) 9:16 ~60 s, (3) 16:9 long-form 60–180 s
 
 ```
-[Production State]
-Mode: —
-Topic: Kettleo — the Wi-Fi kettle
-Format/Ratio: —
-Length: —
-Script Style: —
-Visual Preset: —
-Audio Mode: —
-Status: Step 1 — Scope & specs
+📍 Custom · Kettleo · — · — · — · — · Next: Step 1 — Scope & specs
 ```
 
 ---
@@ -98,15 +76,7 @@ Specs locked: 9:16 at 1080×1920 / 60 fps, ~37 s (0.25 s lead-in + ~32 s VO + 1 
 4. **Custom**: describe a tone or paste a reference script.
 
 ```
-[Production State]
-Mode: Single
-Topic: Kettleo — the Wi-Fi kettle
-Format/Ratio: 9:16 Vertical
-Length: ~37 s total (VO ~32 s)
-Script Style: —
-Visual Preset: —
-Audio Mode: —
-Status: Step 2 — choosing script preset
+📍 Custom · Kettleo · 9:16 ~37 s · — · — · — · Next: Step 2 — choosing script preset
 ```
 
 ---
@@ -134,7 +104,7 @@ Status: Step 2 — choosing script preset
 
 **98 words → ~32.5 s at 3.1 words/s** (inside the 32 ± 1.5 s window).
 
-## ⚠ Verify before recording
+## ⚠ Check these facts
 Source order: primary (filings, company statements) → reputable press → analysts → secondary.
 - **"60 million dollars", "in 2019"**: total raised, or one round? If it was cumulative, say "raised 60 million dollars in total".
 - **"Ninety thousand kettles"**: units sold vs. units active at the outage. Safer: "Tens of thousands of kettles".
@@ -144,18 +114,10 @@ Source order: primary (filings, company statements) → reputable press → anal
 - **"In 2022, Kettleo shut down"**: wind-down announcement date vs. the date the servers went offline.
 - **Kicker**: an opinion framed as irony. Fine as written; no factual claim.
 
-🛑 **Script Review Gate:** approve, tweak specific lines, or regenerate?
+**Script ✔ checkpoint:** approve, tweak specific lines, or regenerate?
 
 ```
-[Production State]
-Mode: Single
-Topic: Kettleo — the Wi-Fi kettle
-Format/Ratio: 9:16 Vertical
-Length: ~37 s total (VO ~32 s)
-Script Style: S1 Irony Label
-Visual Preset: —
-Audio Mode: —
-Status: Step 2 — 🛑 Script Review Gate pending
+📍 Custom · Kettleo · 9:16 ~37 s · S1 Irony Label · — · — · Next: Step 2 — Script ✔
 ```
 
 ---
@@ -174,15 +136,7 @@ Line 6 is now "Tens of thousands of kettles... needed the internet to switch on.
 4. **V4 Case File** / 5. **V5 Tiny World 3D** / 6. **Reference** / 7. **Custom**
 
 ```
-[Production State]
-Mode: Single
-Topic: Kettleo — the Wi-Fi kettle
-Format/Ratio: 9:16 Vertical
-Length: ~37 s total (VO ~32 s)
-Script Style: S1 Irony Label ✅
-Visual Preset: —
-Audio Mode: —
-Status: Step 3 — choosing visual preset
+📍 Custom · Kettleo · 9:16 ~37 s · S1 Irony Label · — · — · Next: Step 3 — choosing visual preset
 ```
 
 ---
@@ -232,18 +186,10 @@ Status: Step 3 — choosing visual preset
 
 Clear zones: the $60,000,000 odometer and the 4 DAYS counter get a paper plate that nothing crosses. Captions stay within x 90–990 and nothing goes below y 1580.
 
-🛑 **Visual Direction Gate:** approve the preset, storyboard and prop sheet, or note changes?
+**Look ✔ checkpoint:** approve the preset, storyboard and prop sheet, or note changes?
 
 ```
-[Production State]
-Mode: Single
-Topic: Kettleo — the Wi-Fi kettle
-Format/Ratio: 9:16 Vertical
-Length: ~37 s total (VO ~32 s)
-Script Style: S1 Irony Label ✅
-Visual Preset: V3 Keynote Type
-Audio Mode: —
-Status: Step 3 — 🛑 Visual Direction Gate pending
+📍 Custom · Kettleo · 9:16 ~37 s · S1 Irony Label · V3 Keynote Type · — · Next: Step 3 — Look ✔
 ```
 
 ---
@@ -257,15 +203,7 @@ Status: Step 3 — 🛑 Visual Direction Gate pending
 2. **Music?** (1) light pizzicato / playful-documentary, 100–115 BPM, with a clear drop to hit the TURN ★, (2) dark minimal pulse, (3) you pick a track
 
 ```
-[Production State]
-Mode: Single
-Topic: Kettleo — the Wi-Fi kettle
-Format/Ratio: 9:16 Vertical
-Length: ~37 s total (VO ~32 s)
-Script Style: S1 Irony Label ✅
-Visual Preset: V3 Keynote Type ✅
-Audio Mode: —
-Status: Step 4 — Audio choices
+📍 Custom · Kettleo · 9:16 ~37 s · S1 Irony Label · V3 Keynote Type · — · Next: Step 4 — Audio choices
 ```
 
 ---
@@ -306,18 +244,10 @@ Status: Step 4 — Audio choices
 - **Targets:** −14 LUFS, ≤ −1.5 dBTP after AAC encoding.
 - **Export:** H.264 CRF 17, yuv420p, AAC 48 kHz 192 kbps, faststart.
 
-🛑 **Audio Gate:** approve the VO plan, music placement and cue sheet?
+**Sound ✔ checkpoint:** approve the VO plan, music placement and cue sheet?
 
 ```
-[Production State]
-Mode: Single
-Topic: Kettleo — the Wi-Fi kettle
-Format/Ratio: 9:16 Vertical
-Length: ~37 s total (VO ~32 s)
-Script Style: S1 Irony Label ✅
-Visual Preset: V3 Keynote Type ✅
-Audio Mode: Uploaded VO + playful pizzicato (drop on TURN) + V3 SFX
-Status: Step 4 — 🛑 Audio Gate pending
+📍 Custom · Kettleo · 9:16 ~37 s · S1 Irony Label · V3 Keynote Type · Uploaded VO + playful pizzicato (drop on TURN) + V3 SFX · Next: Step 4 — Sound ✔
 ```
 
 ---
@@ -333,15 +263,7 @@ Status: Step 4 — 🛑 Audio Gate pending
 2. **Platforms confirmed:** YouTube Shorts, TikTok and Reels. Add YouTube long-form? (1) no ★, (2) yes
 
 ```
-[Production State]
-Mode: Single
-Topic: Kettleo — the Wi-Fi kettle
-Format/Ratio: 9:16 Vertical
-Length: ~37 s total (VO 32.2 s)
-Script Style: S1 Irony Label ✅
-Visual Preset: V3 Keynote Type ✅
-Audio Mode: Uploaded VO + playful pizzicato (drop on TURN) + V3 SFX ✅
-Status: Step 5 — Thumbnails & packaging
+📍 Custom · Kettleo · 9:16 ~37 s · S1 Irony Label · V3 Keynote Type · Uploaded VO + playful pizzicato (drop on TURN) + V3 SFX · Next: Step 5 — Thumbnails & packaging
 ```
 
 ---
@@ -385,18 +307,10 @@ Checks: all text comes from the approved script, everything sits above the botto
 - ⚠ Verify list: 6 claims still open (yours to close).
 - End card: uses your `templates/brand-kit.md` (not filled in yet).
 
-🛑 **Final Package Gate:** any final changes? Then choose an export: (1) Markdown ★, (2) JSON.
+**Post ✔ checkpoint:** any final changes? Then choose an export: (1) Markdown ★, (2) JSON.
 
 ```
-[Production State]
-Mode: Single
-Topic: Kettleo — the Wi-Fi kettle
-Format/Ratio: 9:16 Vertical
-Length: ~37 s total (VO 32.2 s)
-Script Style: S1 Irony Label ✅
-Visual Preset: V3 Keynote Type ✅
-Audio Mode: Uploaded VO + playful pizzicato (drop on TURN) + V3 SFX ✅
-Status: Step 5 — 🛑 Final Package Gate pending
+📍 Custom · Kettleo · 9:16 ~37 s · S1 Irony Label · V3 Keynote Type · Uploaded VO + playful pizzicato (drop on TURN) + V3 SFX · Next: Step 5 — Post ✔
 ```
 
 ---
@@ -447,19 +361,11 @@ Status: Step 5 — 🛑 Final Package Gate pending
 ```
 
 ```
-[Production State]
-Mode: Single
-Topic: Kettleo — the Wi-Fi kettle
-Format/Ratio: 9:16 Vertical
-Length: ~37 s total (VO 32.2 s)
-Script Style: S1 Irony Label ✅
-Visual Preset: V3 Keynote Type ✅
-Audio Mode: Uploaded VO + playful pizzicato (drop on TURN) + V3 SFX ✅
-Status: ✅ Package exported — open items: Verify list, brand kit
+📍 Custom · Kettleo · 9:16 ~37 s · S1 Irony Label · V3 Keynote Type · Uploaded VO + playful pizzicato (drop on TURN) + V3 SFX · Next: ✅ Package exported — open items: Verify list, brand kit
 ```
 
 ---
 
 ## What batch mode would change
 
-With `/batch-mode` and a 5-topic list, Turns 6–11 collapse. The ratio, V3, the audio mode, the High-CTR thumbnail style and the platforms are locked once. Each episode then shows its script at the 🛑 Script Review Gate, and after approval Claude produces that episode's storyboard, cue sheet, thumbnails and packaging in one response for a final check, then moves to the next episode.
+With `/batch-mode` and a 5-topic list, Turns 6–11 collapse. The ratio, V3, the audio mode, the High-CTR thumbnail style and the platforms are locked once. Each episode then shows its script at the 🛑 Script ✔ checkpoint, and after approval Claude produces that episode's storyboard, cue sheet, thumbnails and packaging in one response for a final check, then moves to the next episode.
