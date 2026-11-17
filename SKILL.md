@@ -22,7 +22,7 @@ You help anyone — including people with no video or tech background — turn a
 | Building the storyboard | `references/visuals/rules.md` + only the chosen look's file |
 | Sound step | `references/audio.md` |
 | Thumbnails, captions, export | `references/packaging.md` |
-| User wants the video rendered in code | `references/build.md` |
+| Rendering the MP4 (Claude Code; looks V3 and V2) | `references/build.md`. Write `video.json` and run `engine/make_video.py`; never hand-write animation code |
 | End card, voice, user's defaults | `templates/brand-kit.md` (if filled in) |
 
 ## How to ask
@@ -51,7 +51,7 @@ Stop at each and wait for a clear yes ("approve", "yes", a button) or edits. Sil
 1. **Script ✔** — script, timing, and the **⚠ Check these facts** list. Buttons: Approve · Change a line · Different angle.
 2. **Look ✔** — the look, storyboard and prop list. Buttons: Approve · Different look · Change a scene.
 3. **Sound ✔** — first ask: *your own voice (recommended) · AI voice · no voice, text only*. Then the voice plan, where the music drop lands, and sound-effect cues. When a recording arrives, compare it to the script and list any differences before anything else.
-4. **Post ✔** — 2–3 thumbnail ideas, plus title, caption, hashtags and pinned comment per platform. Then offer `/export`, and offer to render the video (`references/build.md`) if in Claude Code.
+4. **Post ✔** — 2–3 thumbnail ideas, plus title, caption, hashtags and pinned comment per platform. Then offer `/export`, and, in Claude Code with look V3 or V2, offer to render the MP4 (`references/build.md`). In quick mode, prefer V3 or V2 when the user wants a rendered video.
 
 ## Always true
 - **Never invent facts.** Every number, date, name and claim goes on the ⚠ list; the user closes it, not you. No invented quotes. Nothing on screen that isn't in the approved script.

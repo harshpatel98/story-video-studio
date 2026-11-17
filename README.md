@@ -89,8 +89,18 @@ Start a new session and type `/video`.
 
 ---
 
-## Rendering the actual video (optional, Claude Code)
-The skill gives you a complete production plan. To have Claude Code render the MP4 as well, say "render it" at the end. [`references/build.md`](references/build.md) describes the method: HTML canvas or three.js frames, Playwright capture, an ffmpeg encode and QC contact sheets. You need Python, Playwright and ffmpeg installed, and Claude will ask before running anything.
+## Rendering the actual video (Claude Code)
+The skill includes a **render engine** for the **V3 Keynote Type** and **V2 Bold Story** looks. Say "render it" at the end of a run. Claude writes one small `video.json` (your approved lines plus what appears on screen) and runs one command, with no animation code written per video:
+
+| V3 Keynote Type | V2 Bold Story |
+|---|---|
+| ![V3 preview](examples/kettleo/preview-v3.png) | ![V2 preview](examples/kettleo/preview-v2.png) |
+
+You get a 1080×1920, 60 fps MP4 at −14 LUFS with your end card. If you recorded your voice, captions are timed to it, the music's lift lands on the twist, and the voice stays louder than music and effects on every word. QC sheets and a report are included. A first draft takes about a minute on a desktop PC.
+
+One-time setup (Claude runs `make_video.py check` and shows you exactly what's missing): Python, `pip install numpy scipy pillow playwright faster-whisper`, `python -m playwright install chromium`, and ffmpeg. See [`engine/README.md`](engine/README.md).
+
+V1, V4 and V5 are still plan-only. Claude can describe them fully, but the engine doesn't render them yet.
 
 ## Folder structure
 ```
@@ -100,13 +110,16 @@ story-video-studio/
 │   ├── script.md             # story shape, script styles, fact-check list
 │   ├── audio.md              # voice, music, mix targets, sound-effect cues
 │   ├── packaging.md          # thumbnails, platform captions, export format
-│   ├── build.md              # optional code rendering
+│   ├── build.md              # how Claude writes video.json and runs the engine
 │   └── visuals/
 │       ├── index.md          # one-line summary of each look
 │       ├── rules.md          # rules every look follows + storyboard format
 │       └── v1-mascot.md … v5-tiny-world.md
+├── engine/                   # render engine: make_video.py, player + looks (JS), Python pipeline, fonts
 ├── templates/brand-kit.md    # your end card, voice and defaults
-├── examples/sample-production.md
+├── examples/
+│   ├── sample-production.md  # a full worked run, discovery to export
+│   └── kettleo/video.json    # a ready-to-render example project
 ├── README.md
 └── LICENSE
 ```

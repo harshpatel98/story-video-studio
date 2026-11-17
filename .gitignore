@@ -1,0 +1,5 @@
+examples/*/build/
+examples/*/qc/
+examples/*/*.mp4
+__pycache__/
+*.pyc

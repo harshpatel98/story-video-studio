@@ -1,0 +1,35 @@
+{
+  "title": "Kettleo",
+  "look": "v3",
+  "accent": "#6B3CF6",
+  "voice": null,
+  "music": null,
+  "endcard": {
+    "name": "YOUR CHANNEL",
+    "tagline": "Stories of bets that went wrong.",
+    "bg": "#111216",
+    "fg": "#FFFFFF",
+    "tagline_color": "#D9D6CF"
+  },
+  "beats": [
+    { "id": "hook", "say": "The 60 million dollar kettle... that couldn't boil water.",
+      "show": [ {"number": "$60,000,000"}, {"text": "KETTLE", "at": "kettle"}, {"small": "that couldn't boil water", "at": "couldn't"}, {"icon": "kettle", "at": "boil", "strike_at": "water"} ] },
+    { "id": "title", "say": "Kettleo.", "show": [ {"title": "Kettleo"} ] },
+    { "id": "raised", "say": "In 2019, it raised 60 million dollars... for a kettle with an app.",
+      "show": [ {"small": "In 2019, it raised", "at": "2019"}, {"number": "$60M", "at": "60", "color": "accent"}, {"text": "FOR A KETTLE", "at": "kettle"}, {"text": "WITH AN APP", "at": "app", "hl": true} ] },
+    { "id": "phone", "say": "Set the exact temperature from your phone. Investors called it the smart kitchen's first hit.",
+      "show": [ {"phone": "100°", "at": "temperature"}, {"text": "THE SMART KITCHEN'S FIRST HIT", "at": "smart"} ] },
+    { "id": "turn", "say": "Then, one Monday morning... the servers went down.", "turn": true,
+      "show": [ {"small": "Then, one", "at": "then"}, {"date": "MON", "top": "Monday", "at": "monday"}, {"stamp": "Server down", "at": "down"} ] },
+    { "id": "grid", "say": "Tens of thousands of kettles... needed the internet to switch on.",
+      "show": [ {"text": "TENS OF THOUSANDS", "at": "tens"}, {"icons": ["kettle", "kettle", "kettle", "wifi"], "at": "kettles", "strike": 3, "strike_at": "internet"}, {"small": "needed the internet to switch on", "at": "needed"} ] },
+    { "id": "nokettle", "say": "No server. No kettle.",
+      "show": [ {"text": "NO SERVER.", "at": "server"}, {"text": "NO KETTLE.", "at": "kettle", "hl": true} ] },
+    { "id": "waiting", "say": "People stood in their kitchens... waiting for an update.",
+      "show": [ {"icons": ["people", "clock"], "at": "people"}, {"text": "WAITING", "at": "waiting"}, {"small": "for an update", "at": "update"} ] },
+    { "id": "fall", "say": "It took four days to fix. Sales never came back. In 2022, Kettleo shut down.",
+      "show": [ {"number": "4 DAYS", "at": "four", "count": false}, {"trend": "down", "at": "sales", "label": "sales"}, {"stamp": "Shut down", "at": "shut"} ] },
+    { "id": "kicker", "say": "60 million dollars... to beat a button your stove already had.",
+      "show": [ {"number": "$60,000,000", "count": false}, {"small": "to beat a button", "at": "beat"}, {"text": "YOUR STOVE ALREADY HAD.", "at": "stove"} ] }
+  ]
+}
